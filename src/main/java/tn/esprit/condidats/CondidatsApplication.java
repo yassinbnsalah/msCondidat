@@ -4,11 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import tn.esprit.condidats.Repositories.CandidatRepository;
 import tn.esprit.condidats.entites.Condidat;
 
 @SpringBootApplication
+@EnableEurekaClient
 public class CondidatsApplication {
 
 	public static void main(String[] args) {
